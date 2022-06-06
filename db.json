@@ -1,0 +1,13 @@
+{
+    "posts": [
+      { "id": 1, "title": "Json-server", "author": "Esayas" },
+      { "id": 2, "title": "JavaScript", "author": "Gemechu" },
+      { "id": 3, "title": "TypesCript", "author": "Habtamu" },
+      { "id": 4, "title": "React JS", "author": "Welela" },
+      { "id": 5, "title": "Mongo db", "author": "Melaku" }
+    ],
+    "comments": [
+      { "id": 1, "body": "some comment", "postId": 1 }
+    ],
+    "profile": { "name": "typicode" }
+  }
