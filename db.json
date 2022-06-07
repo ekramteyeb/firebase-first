@@ -1,13 +1,18 @@
 {
-    "posts": [
-      { "id": 1, "title": "Json-server", "author": "Esayas" },
-      { "id": 2, "title": "JavaScript", "author": "Gemechu" },
-      { "id": 3, "title": "TypesCript", "author": "Habtamu" },
-      { "id": 4, "title": "React JS", "author": "Welela" },
-      { "id": 5, "title": "Mongo db", "author": "Melaku" }
-    ],
-    "comments": [
-      { "id": 1, "body": "some comment", "postId": 1 }
-    ],
-    "profile": { "name": "typicode" }
+  "posts": [
+    {
+      "id": "2022-06-07T18:13:54.772Z",
+      "title": "CSS",
+      "author": "Hussen"
+    },
+    {
+      "id": "2022-06-07T18:14:08.873Z",
+      "title": "Javascript",
+      "author": "Afuna"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
   }
+}
