@@ -26,9 +26,9 @@ function Slides({slides}) {
                 disabled={counter === slides.length - 1 ? true : false}
                 >Next</button>
             </div>
-            <div id="slide" className="card text-center p-4">
-                <h1 data-testid="title">{current.title.toUpperCase()}</h1>
-                <p data-testid="text">{current.text}</p>
+            <div id="slide" className="card text-center p-4 bg-light">
+                <h1 data-testid="title" className='text-gray'>{current.title.toUpperCase()}</h1>
+                <p data-testid="text" className='text-gray'>{current.text}</p>
             </div>
         </div>
     );
