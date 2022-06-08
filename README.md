@@ -8,6 +8,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 * yarn start // locally
 * firebase deploy // to firebase
 
+* Link to the app [Firebase Project ](https://first-firebase-74be3.web.app/?).
+
 ## Available Scripts
 
 In the project directory, you can run:
