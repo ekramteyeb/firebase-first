@@ -4654,6 +4654,11 @@ gzip-size@^6.0.0:
   dependencies:
     duplexer "^0.1.2"
 
+h8k-components@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/h8k-components/-/h8k-components-1.0.0.tgz#730ca24e14c6a501344886b8767763312ea38a19"
+  integrity sha512-4NhuZI7W10BrSnTjcfh2QNhiuzgPP2E/WeufTDa/X5kc1jE9kiZcSwfcuWOb9qlbRSIXRzI0vwnULyGX/QV72g==
+
 handle-thing@^2.0.0:
   version "2.0.1"
   resolved "https://registry.npmjs.org/handle-thing/-/handle-thing-2.0.1.tgz"
