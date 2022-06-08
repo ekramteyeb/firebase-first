@@ -28,6 +28,18 @@ function ArticlesShow() {
       upvotes: '95',
       date : '2012-08-09'
     }
+    , 
+    {
+      title: 'PHP ',
+      upvotes: '85',
+      date : '2014-09-09'
+    }
+    , 
+    {
+      title: 'React ',
+      upvotes: '98',
+      date : '2022-01-09'
+    }
   ]
     const [sort , setSort] = useState('')
     

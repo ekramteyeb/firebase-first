@@ -1,9 +1,10 @@
 import React, {useState, useEffect} from 'react'
-import { useNavigate } from "react-router-dom";
+//import { useNavigate } from "react-router-dom";
 import { Table, Form, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Navigator from '../components/Navigator';
+//import Navigator from '../components/Navigator';
 import '../App.css';
+import firebase from '../firebase.js';
 import axios from 'axios';
 
 
@@ -12,15 +13,40 @@ function Home() {
   const [posts, setPosts] = useState([])
   const [title, setTitle] = useState('')
   const [author, setAuthor] = useState('')
+  const [loading, setLoading] = useState(false)
   
+  /* if(loading) {
+    return <h1>Loading ...</h1>;
+  } */
+  const ref = firebase.firestore().collection('posts')
+
+  const getPosts = () => {
+    setLoading(true)
+    ref.onSnapshot((querySnapshot) => {
+      const items = []
+      querySnapshot.forEach((doc) => {
+        items.push(doc.data())
+      })
+      setPosts(items)
+      setLoading(false)
+    })
+  }
+
   useEffect(() => {
+    getPosts();
+  }, [])
+  /* useEffect(() => {
     axios.get('http://localhost:3001/posts')
   .then(function(data){
     
     setPosts(data.data)
   })
   .catch(err => console.log(err))
-  }, [])
+  }, []) */
+
+  if(loading){
+    return <h1>Loading ....</h1>
+  }
   
   const handleSubmit = () => {
     const post = {
