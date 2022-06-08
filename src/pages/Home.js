@@ -97,8 +97,8 @@ function Home() {
         </thead>
         <tbody>
           {
-            posts && posts.map(post => 
-              <tr key={post.id}>
+            posts && posts.map((post, index) => 
+              <tr key={post.id + ' ' + index}>
                 <td>{post.title}</td>
                 <td>{post.author}</td>
                 <td><button className='btn btn-outline-info'>Edit</button></td>
