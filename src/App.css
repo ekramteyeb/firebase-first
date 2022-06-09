@@ -23,7 +23,12 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+.navList{
+  display:flex;
+  align-items:center;
+  
+  
+}
 .App-link {
   color: #61dafb;
 }
@@ -35,4 +40,19 @@
   to {
     transform: rotate(360deg);
   }
+}
+@media only screen and (max-width: 991px) {
+  body {
+    background-color: lightblue;
+  }
+  .navList{
+    display:flex;
+    align-items:start;
+    justify-content:start;
+    
+  }
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+}
 }
