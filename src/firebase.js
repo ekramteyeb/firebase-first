@@ -10,6 +10,19 @@ const firebaseConfig = {
     appId: process.env.REACT_APP_FIREBASE_MESSAGING_APP_ID
   };
 
+  /* 
+
+  const firebaseConfig = {
+  apiKey: "AIzaSyAHbLjeCwAEWqOi7c9uEexHRY--dxDfduA",
+  authDomain: "first-firebase-74be3.firebaseapp.com",
+  projectId: "first-firebase-74be3",
+  storageBucket: "first-firebase-74be3.appspot.com",
+  messagingSenderId: "322697028725",
+  appId: "1:322697028725:web:7daf254784d314f63ec43c"
+};
+  
+  */
+
   firebase.initializeApp(firebaseConfig)
 
   export default firebase

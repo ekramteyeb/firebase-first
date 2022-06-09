@@ -22,6 +22,7 @@ function Home() {
   } */
   const ref = firebase.firestore().collection('posts')
 
+  //get all posts
   const getPosts = () => {
     setLoading(true)
     /* ref.get().then(item => {
@@ -39,7 +40,6 @@ function Home() {
       console.log(items, 'items')
       setLoading(false)
       })
-    
   }
   
   //Add doc to firebase
@@ -58,7 +58,6 @@ function Home() {
      })
      setAuthor('')
      setTitle('')
-    
   }
 
   
@@ -99,8 +98,7 @@ function Home() {
     })
     .catch(error => console.log(error, 'error ')) */
 
-    // to delete document from firebase document 
-
+    // to delete document from firebase document
     ref 
       .doc(post.id)
       .delete()
