@@ -116,13 +116,16 @@ function AlertDismissible() {
         ref
          .doc(slide.id)
          .set(slide)
+         .then(() => {
+            setShow(false)
+         })
          .catch(err => {
            console.log('error adding ', err)
          })
          setTitle('')
          setText('')
          setImage('')
-         setShow(false)
+         
       }
   
     return (
