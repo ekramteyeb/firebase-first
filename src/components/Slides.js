@@ -3,7 +3,7 @@ import React, { useState} from 'react';
 function Slides({slides}) {
 
   const [counter , setCounter] = useState(0)
-  const current = slides[counter]
+  const current = slides.length > 1 ? slides[counter] : {title:'Not fetched', text: 'Slides not arrived', image:'image not ready'}
    
     return (
         <div>
@@ -32,9 +32,14 @@ function Slides({slides}) {
                 <img src={current.image} className="img rounded" style={{height:'46vh'}} alt="Responsive "></img>
                 <p data-testid="text" className='text-gray'>{current.text}</p>
             </div>
+            
         </div>
     );
 
 }
 
 export default Slides;
+
+
+
+  
