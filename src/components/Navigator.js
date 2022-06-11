@@ -10,9 +10,9 @@ export default function Navigator() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto navList">
-                <Link to="/" className="text-white m-1 text-decoration-none">Home</Link>
-                <Link to="/slides" className="text-white m-1 text-decoration-none">Slides</Link>
-                <Link to="/articles" className="text-white m-1 text-decoration-none">Articles</Link>
+                <Link to="/" className="text-white m-2 text-decoration-none">Home</Link>
+                <Link to="/slides" className="text-white m-2 text-decoration-none">Slides</Link>
+                <Link to="/articles" className="text-white m-2 text-decoration-none">Articles</Link>
                     
                     {/* 
                       // this is change is done becouse the code below do page refresh 

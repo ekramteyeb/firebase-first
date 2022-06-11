@@ -109,7 +109,7 @@ function AlertDismissible() {
   
     function addNewSlide(slide){
         if(!slide.text || !slide.title || !slide.image){
-          setMessage('All fields are requiered')
+          setMessage('* All fields are requiered')
           setTimeout(() => setMessage(''), 3000)
           return 
         }
@@ -133,7 +133,7 @@ function AlertDismissible() {
         <Alert show={show} variant="success">
           <Alert.Heading>How about interesting Slide</Alert.Heading>
           {
-                    message ? <p className='p-2 text-danger'>{message}</p> : ''
+            message ? <p className='p-1 text-danger'>{message}</p> : ''
           }
           <Form>
                 <Form.Group className="mb-1" controlId="formBasicTitle">

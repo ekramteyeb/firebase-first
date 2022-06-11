@@ -27,8 +27,7 @@
 .navList{
   display:flex;
   align-items:center;
-  
-  
+  justify-content:space-around;
 }
 .App-link {
   color: #61dafb;
