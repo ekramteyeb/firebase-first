@@ -15,7 +15,7 @@ export default function Navigator() {
                 <Link to="/articles" className="text-white m-2 text-decoration-none">Articles</Link>
                     
                     {/* 
-                      // this is change is done becouse the code below do page refresh 
+                      //this is change is done becouse the code below do page refresh 
                       <Nav.Link href='/' className="text-white">Home</Nav.Link>
                       <Nav.Link href="/slides" className="text-white" >Slides</Nav.Link>
                       <Nav.Link href="/articles" className="text-white" >Articles</Nav.Link> */
