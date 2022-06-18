@@ -4,7 +4,6 @@ function Slides({slides}) {
 
   const [counter , setCounter] = useState(0)
   const current = slides.length > 1 ? slides[counter] : {title:'Not fetched', text: 'Slides not arrived', image:'image not ready'}
-   
     return (
         <div>
             <div id="navigation" className="text-center mt-2 mb-2 ">
